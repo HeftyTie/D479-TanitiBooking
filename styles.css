@@ -4,7 +4,6 @@ body {
 }
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -93,10 +92,6 @@ nav a {
     background-color: blue;
 }
 
-main {
-    margin-top: 100px;
-}
-
 main h1,.main-content {
     margin: 10px;
     margin-bottom: 50px;
@@ -173,6 +168,5 @@ body, html {
 
     main {
         text-align: center;
-        margin-top: 17.7vh;
     }
 }
