@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="javascript.js"></script>
     <title>Taniti Booking | Food</title>
 </head>
@@ -28,6 +29,19 @@
         <div class="pageHolder">
             <img class="background-image" src="imgs/jeshoots-com-mSESwdMZr-A-unsplash.jpg" alt="Background Image">
             <h1>Home Page</h1>
+            <div class="breadcrumbs-container">
+                <div class="breadcrumb current-breadcrumb" id="breadcrumb0"></div>
+                <div class="breadcrumb" id="breadcrumb1"></div>
+                <div class="breadcrumb" id="breadcrumb2"></div>
+                <div class="breadcrumb" id="breadcrumb3"></div>
+                <div class="breadcrumb" id="breadcrumb4"></div>
+                <div class="breadcrumb" id="breadcrumb5"></div>
+                <div class="breadcrumb" id="breadcrumb6"></div>
+            </div>
+            <div class="arrow-container">
+                <div class="arrow left-arrow" onclick="moveBackward()"><i class="fas fa-chevron-left"></i></div>
+                <div class="arrow right-arrow" onclick="moveForward()"><i class="fas fa-chevron-right"></i></div>
+            </div>
         </div>
         <div class="main-content">
             <h1>Flavors of Taniti: Where Tropical Harmony Meets Culinary Culture!</h1>
@@ -35,57 +49,58 @@
             <p>Ready to embark on a culinary journey in Taniti? With a diverse array of 10 restaurants, our island offers a delightful range of dining experiences. Indulge in the richness of local flavors with five establishments specializing in fresh, local fish paired with fragrant rice. Craving a taste of home, American-style, with a Taniti twist? Explore three restaurants where familiar dishes get an island-inspired makeover. For those seeking an adventure in Pan-Asian cuisine, two restaurants got you covered, promising a fusion of flavors that will transport you across continents. Whether you're eager to dive into Tanitian seafood, savor an American classic with a tropical flair, or embark on a Pan-Asian escapade, our restaurants are ready to satisfy your every craving and make your dining experience in Taniti truly memorable.</p>
             <p>Not a fan of dining out? Prefer to unleash your culinary creativity at home? Taniti has you covered with its grocery options. The island features two well-stocked supermarkets, catering to your every household need. Additionally, there are two conveniently located smaller grocery stores for a quick and easy shopping experience. For the night owls or those with unpredictable schedules, there's a 24-hour convenience store, ensuring you can grab essentials whenever the craving strikes.</p>
             <p>If you're passionate about cooking, Taniti goes beyond the ordinary, offering an abundance of fresh produce and day-caught sea life. Elevate your home-cooked meals with the finest ingredients straight from our local markets. Whether you're a seasoned chef or a home cook looking to experiment, Taniti's grocery stores are your gateway to culinary excellence, ensuring you can enjoy the flavors of our island in the comfort of your own kitchen.</p>
-
-            <div>
-                <img src="imgs/ionela-mat-Qjg1UfyNH84-unsplash.jpg" alt="OceanFusion Delights Image">
-                <h2>OceanFusion Delights</h2>
-                <p>Dive into a world of seafood wonders at OceanFusion Delights, where patrons experience the perfect fusion of the ocean's bounty with creative culinary expertise.</p>
-            </div>
-            <div>
-                <img src="imgs/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt="Bamboo Breeze Café">
-                <h2>Bamboo Breeze Café</h2>
-                <p>Enjoy a refreshing cup of coffee while the gentle breeze complements a delectable menu.</p>
-            </div>
-            <div>
-                <img src="imgs/veronika-jorjobert-EZxbmJRX3T0-unsplash.jpg" alt="Sunset Flavors Eatery">
-                <h2>Sunset Flavors Eatery</h2>
-                <p>Indulge in mouthwatering meals against a backdrop as breathtaking as the sunset itself. No matter the time, every moment here is a celebration of deliciousness and scenery!</p>
-            </div>
-            <div>
-                <img src="imgs/david-straight-VZY6o3Q0EEI-unsplash.jpg" alt="MangoTide Tavern Image">
-                <h2>MangoTide Tavern</h2>
-                <p>Visitors can unwind as they sip tropical drinks and indulge in island-inspired dishes, creating a perfect blend of relaxation and flavor.</p>
-            </div>
-            <div>
-                <img src="imgs/despina-galani-i0c-tOtR0Ks-unsplash.jpg" alt="Tropical Spice Tavern Image">
-                <h2>Tropical Spice Tavern</h2>
-                <p>Savor the exotic at Tropical Spice Tavern, where a fusion of tropical ingredients and aromatic spices takes your taste buds on a thrilling adventure.</p>
-            </div>
-            <div>
-                <img src="imgs/dayanara-nacion-HuIJUp6gTDI-unsplash.jpg" alt="LibertyGrill Diner">
-                <h2>LibertyGrill Diner</h2>
-                <p>Taste the freedom at LibertyGrill Diner, where classic American comfort food meets Taniti cuisine. A nostalgic journey through flavors and history.</p>
-            </div>
-            <div>
-                <img src="imgs/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg" alt="Stateside Smokehouse Image">
-                <h2>Stateside Smokehouse</h2>
-                <p>Get ready for a barbecue feast at Stateside Smokehouse, where the aroma of smoky goodness fills the air. Dive into a menu that celebrates the art of American barbecue.</p>
-            </div>
-            <div>
-                <img src="imgs/sergio-arteaga-mHVxkXNIlIE-unsplash.jpg" alt="UrbanEats Bistro & Bar Image">
-                <h2>UrbanEats Bistro & Bar</h2>
-                <p>Experience the vibrant pulse of city life at UrbanEats Bistro & Bar, a modern American haven where diverse flavors and contemporary vibes collide</p>
-            </div>
-            <div>
-                <img src="imgs/caramel-CK6YDmlxgb4-unsplash.jpg" alt="DragonFly Noodle Bar Image">
-                <h2>DragonFly Noodle Bar</h2>
-                <p>Savor the dance of flavors at DragonFly Noodle Bar, a place where noodles take flight and the spirit of Asia swirls in every bowl. A noodle-lover's paradise.</p>
-            </div>
-            <div>
-                <img src="imgs/cloris-ying-aZqfzi_5lsk-unsplash.jpg" alt="LotusHarbor Sushi & Grill Image">
-                <h2>LotusHarbor Sushi & Grill</h2>
-                <p>Journey to the LotusHarbor, where sushi meets the grill in a harmonious blend of flavors</p>
-            </div>
+            <div class="sub-content">
+                <div>
+                    <img src="imgs/ionela-mat-Qjg1UfyNH84-unsplash.jpg" alt="OceanFusion Delights Image">
+                    <h2>OceanFusion Delights</h2>
+                    <p>Dive into a world of seafood wonders at OceanFusion Delights, where patrons experience the perfect fusion of the ocean's bounty with creative culinary expertise.</p>
+                </div>
+                <div>
+                    <img src="imgs/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt="Bamboo Breeze Café">
+                    <h2>Bamboo Breeze Café</h2>
+                    <p>Enjoy a refreshing cup of coffee while the gentle breeze complements a delectable menu.</p>
+                </div>
+                <div>
+                    <img src="imgs/veronika-jorjobert-EZxbmJRX3T0-unsplash.jpg" alt="Sunset Flavors Eatery">
+                    <h2>Sunset Flavors Eatery</h2>
+                    <p>Indulge in mouthwatering meals against a backdrop as breathtaking as the sunset itself. No matter the time, every moment here is a celebration of deliciousness and scenery!</p>
+                </div>
+                <div>
+                    <img src="imgs/david-straight-VZY6o3Q0EEI-unsplash.jpg" alt="MangoTide Tavern Image">
+                    <h2>MangoTide Tavern</h2>
+                    <p>Visitors can unwind as they sip tropical drinks and indulge in island-inspired dishes, creating a perfect blend of relaxation and flavor.</p>
+                </div>
+                <div>
+                    <img src="imgs/despina-galani-i0c-tOtR0Ks-unsplash.jpg" alt="Tropical Spice Tavern Image">
+                    <h2>Tropical Spice Tavern</h2>
+                    <p>Savor the exotic at Tropical Spice Tavern, where a fusion of tropical ingredients and aromatic spices takes your taste buds on a thrilling adventure.</p>
+                </div>
+                <div>
+                    <img src="imgs/dayanara-nacion-HuIJUp6gTDI-unsplash.jpg" alt="LibertyGrill Diner">
+                    <h2>LibertyGrill Diner</h2>
+                    <p>Taste the freedom at LibertyGrill Diner, where classic American comfort food meets Taniti cuisine. A nostalgic journey through flavors and history.</p>
+                </div>
+                <div>
+                    <img src="imgs/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg" alt="Stateside Smokehouse Image">
+                    <h2>Stateside Smokehouse</h2>
+                    <p>Get ready for a barbecue feast at Stateside Smokehouse, where the aroma of smoky goodness fills the air. Dive into a menu that celebrates the art of American barbecue.</p>
+                </div>
+                <div>
+                    <img src="imgs/sergio-arteaga-mHVxkXNIlIE-unsplash.jpg" alt="UrbanEats Bistro & Bar Image">
+                    <h2>UrbanEats Bistro & Bar</h2>
+                    <p>Experience the vibrant pulse of city life at UrbanEats Bistro & Bar, a modern American haven where diverse flavors and contemporary vibes collide</p>
+                </div>
+                <div>
+                    <img src="imgs/caramel-CK6YDmlxgb4-unsplash.jpg" alt="DragonFly Noodle Bar Image">
+                    <h2>DragonFly Noodle Bar</h2>
+                    <p>Savor the dance of flavors at DragonFly Noodle Bar, a place where noodles take flight and the spirit of Asia swirls in every bowl. A noodle-lover's paradise.</p>
+                </div>
+                <div>
+                    <img src="imgs/cloris-ying-aZqfzi_5lsk-unsplash.jpg" alt="LotusHarbor Sushi & Grill Image">
+                    <h2>LotusHarbor Sushi & Grill</h2>
+                    <p>Journey to the LotusHarbor, where sushi meets the grill in a harmonious blend of flavors</p>
+                </div>
+            </div>        
         </div> 
     </main>
 
@@ -94,3 +109,8 @@
     </footer>
 </body>
 </html>
+<style>
+    .sub-content > div {
+        flex-basis: calc(20% - 20px);
+    }
+</style>

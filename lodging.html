@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="javascript.js"></script>
     <title>Taniti Booking | Lodging</title>
 </head>
@@ -28,6 +29,19 @@
         <div class="pageHolder">
             <img class="background-image" src="imgs/jeshoots-com-mSESwdMZr-A-unsplash.jpg" alt="Background Image">
             <h1>Home Page</h1>
+            <div class="breadcrumbs-container">
+                <div class="breadcrumb current-breadcrumb" id="breadcrumb0"></div>
+                <div class="breadcrumb" id="breadcrumb1"></div>
+                <div class="breadcrumb" id="breadcrumb2"></div>
+                <div class="breadcrumb" id="breadcrumb3"></div>
+                <div class="breadcrumb" id="breadcrumb4"></div>
+                <div class="breadcrumb" id="breadcrumb5"></div>
+                <div class="breadcrumb" id="breadcrumb6"></div>
+            </div>
+            <div class="arrow-container">
+                <div class="arrow left-arrow" onclick="moveBackward()"><i class="fas fa-chevron-left"></i></div>
+                <div class="arrow right-arrow" onclick="moveForward()"><i class="fas fa-chevron-right"></i></div>
+            </div>
         </div>
 
         <div class="main-content">
@@ -40,36 +54,37 @@
                 <p>What's more, rest easy knowing that all our lodging options, from hostels to resorts, undergo strict regulation and regular inspections by the Tanitian government. Your comfort and safety are our top priorities, ensuring your stay in Taniti is a vibrant and worry-free experience. Let the island's hospitality surround you as you find your perfect haven in Taniti!</p>
             </div>
 
-            <div>
-                <img>
-                <p>LuxeVista Resort & Spa</p>
-                <p>Indulge in a rejuvenating spa experience accompanied by a breathtaking view of the sunset.</p>
-            </div>
-            <div>
-                <img>
-                <p>HarborHaven Hotel</p>
-                <p>a grand hotel where coastal charm and luxurious comfort intertwine.</p>
-                <p>"A cliffside retreat, this hotel seamlessly blends coastal charm with luxurious comfort, offering a stunning beachfront experience.</p>
-            </div>
-            <div>
-                <img>
-                <p>Sakura Grove Lodging</p>
-                <p>A family-owned inn adorned with Japanese architecture.</p>
-            </div>
-            <div>
-                <img>
-                <p>CozyNook Bungalows</p>
-                <p>Embrace ocean breezes at CozyNook Bungalows, where guests stay in overwater bungalows and enjoy complimentary diving gear.</p>
-            </div>
-            <div>
-                <img>
-                <p>Welcome to Cottage Crest Homestay</p>
-                <p>For volcano enthusiasts, this charming inn near Mount Ire offers captivating views. Guests can also unwind in a rejuvenating natural hot spring.</p>
-            </div>
-            <div>
-                <img>
-                <p>Whispering Pines Bed & Breakfast</p>
-                <p>Family-run bed and breakfast with a focus on breakfast. Enjoy a delightful start to your day with meals tailored just for you..</p>
+            <div class="sub-content">
+                <div>
+                    <img src="imgs/adrian-motroc-87InWldRhgs-unsplash.jpg" alt="LuxeVista Resort & Spa Image">
+                    <h2>Luxevista Resort & Spa</h2>
+                    <p>Indulge in a rejuvenating spa experience accompanied by a breathtaking view of the sunset.</p>
+                </div>
+                <div>
+                    <img src="imgs/francesca-saraco-_dS27XGgRyQ-unsplash.jpg" alt="Harbor Haven Hotel Image">
+                    <h2>HarborHaven Hotel</h2>
+                    <p>A cliffside retreat, this hotel seamlessly blends coastal charm with luxurious comfort, offering a stunning beachfront experience.</p>
+                </div>
+                <div>
+                    <img src="imgs/sigmund-q6E_ItuUSec-unsplash.jpg" alt="Sakyra Grove Lodging">
+                    <h2>Sakura Grove Lodging</h2>
+                    <p>A family-owned inn adorned with Japanese architecture.</p>
+                </div>
+                <div>
+                    <img src="imgs/mike-swigunski-k9Zeq6EH_bk-unsplash.jpg" alt="CozyNook Bungalows Image">
+                    <h2>CozyNook Bungalows</h2>
+                    <p>Embrace ocean breezes at CozyNook Bungalows, where guests stay in overwater bungalows and enjoy complimentary diving gear.</p>
+                </div>
+                <div>
+                    <img src="imgs/michael-lammli-Oic4F8WGeLM-unsplash.jpg" alt="Cottage Crest Homestay">
+                    <h2>Cottage Crest Homestay</h2>
+                    <p>For volcano enthusiasts, this charming inn near Mount Ire offers captivating views. Guests can also unwind in a rejuvenating natural hot spring.</p>
+                </div>
+                <div>
+                    <img src="imgs/prateek-gupta-aL_z92TK3SA-unsplash.jpg" alt="Whispering Pines & Breakfast Images">
+                    <h2>Whispering Pines Bed & Breakfast</h2>
+                    <p>Family-run bed and breakfast with a focus on breakfast. Enjoy a delightful start to your day with meals tailored just for you..</p>
+                </div>
             </div>
         </div>
     </main>
@@ -79,3 +94,8 @@
     </footer>
 </body>
 </html>
+<style>
+    .sub-content > div {
+        flex-basis: calc(50% - 20px);
+    }
+</style>
