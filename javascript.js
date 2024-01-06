@@ -6,22 +6,28 @@ document.addEventListener('DOMContentLoaded', function () {
         var href = navItem.getAttribute('href');
 
         if (currentPage.endsWith(href)) {
-            navItem.style.padding = '5px';
-            navItem.style.backgroundColor = 'white';
-            navItem.style.borderRight = '2px solid black';
-            navItem.style.borderRadius = '50%';
-            navItem.style.opacity = '0.2';
+            navItem.style.color = '#e9c46a';
         } 
     });
 
     const images = [
         "imgs/jeshoots-com-mSESwdMZr-A-unsplash.jpg",
-        "imgs/julian-hochgesang-INDN7nOIVJ8-unsplash.jpg"
+        "imgs/tim-toomey-STqHLqMne3k-unsplash.jpg",
+        "imgs/upgraded-points-KenpE6DO1l0-unsplash.jpg",
+        "imgs/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg",
+        "imgs/why-kei-8e2gal_GIE8-unsplash.jpg",
+        "imgs/bruce-mars-xj8qrWvuOEs-unsplash.jpg",
+        "imgs/rupixen-com-Q59HmzK38eQ-unsplash.jpg"
     ];
 
     const imageTexts = [
         "Home Page",
-        "Lodging"
+        "Food",
+        "Lodging",
+        "Activities",
+        "Travel",
+        "FAQs",
+        "Booking"
     ];
 
     let currentImageIndex = 0;
