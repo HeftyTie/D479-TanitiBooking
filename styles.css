@@ -116,33 +116,6 @@ main h1,.main-content {
     object-fit: cover;
 }
 
-.sub-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sub-content > div { 
-    margin: 10px; 
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.sub-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.sub-content h2 {
-    margin: 10px 0;
-}
-
-.sub-content p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 footer {
     position: relative;
     background-color: #264653;
@@ -225,6 +198,35 @@ button {
 
 button:hover {
     border: 2px solid black;
+}
+
+@media (min-width: 767px) {
+    .sub-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .sub-content > div {
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .sub-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .sub-content h2 {
+            margin: 10px 0;
+        }
+
+        .sub-content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
 }
 
 @media (max-width: 767px) {
