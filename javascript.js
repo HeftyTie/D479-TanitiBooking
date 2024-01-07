@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "food.html",
             "lodging.html",
             "activities.html",
-            "transporation.html",
+            "transportation.html",
             "faqs.html",
             "booking.html"
         ];
