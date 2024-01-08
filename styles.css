@@ -207,26 +207,42 @@ button:hover {
         justify-content: center;
     }
 
-        .sub-content > div {
-            margin: 10px;
-            box-sizing: border-box;
-            text-align: center;
-        }
+    .sub-content > div {
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
-        .sub-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+    .sub-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-        .sub-content h2 {
-            margin: 10px 0;
-        }
+    .sub-content h2 {
+        margin: 10px 0;
+    }
 
-        .sub-content p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+    .sub-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #bookingDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    #bookingDiv .main-content {
+        width: 50vw;
+    }
+
+    form {
+        width: 40vw;
+    }
 }
 
 @media (max-width: 767px) {

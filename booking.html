@@ -45,58 +45,64 @@
                 <div class="arrow right-arrow" onclick="moveForward()"><i class="fas fa-chevron-right"></i></div>
             </div>
         </div>
-        <div class="main-content">
-            <h2>Taniti fancies your taste?</h2>
-            <p>Well, look no further, because your dream island adventure is just a click away! When you book through our website, you're not only securing tickets to our tropical paradise but also unlocking a myriad of fabulous hotel options that cater to your every desire! From beachfront bliss to luxurious hideaways, our island offers a dazzling array of accommodations to suit every taste and preference. Picture yourself waking up to the soothing sound of the ocean or indulging in a pampering session at one of our top-notch resorts.</p>
-            <p>But that's not all! Our seamless partnership with a top-tier travel agency ensures that your journey is not just a trip; it's a stress-free, unforgettable experience. Dive into the excitement, embrace the luxury, and let your island fantasy come to life! So, what are you waiting for? Click, book, and let the adventure begin! Tanity has never been this good!</p>
-        </div>
+        <div id="bookingDiv">
+            <div class="main-content">
+                <h2>Taniti fancies your taste?</h2>
+                <p>Well, look no further, because your dream island adventure is just a click away! When you book through our website, you're not only securing tickets to our tropical paradise but also unlocking a myriad of fabulous hotel options that cater to your every desire! From beachfront bliss to luxurious hideaways, our island offers a dazzling array of accommodations to suit every taste and preference. Picture yourself waking up to the soothing sound of the ocean or indulging in a pampering session at one of our top-notch resorts.</p>
+                <p>But that's not all! Our seamless partnership with a top-tier travel agency ensures that your journey is not just a trip; it's a stress-free, unforgettable experience. Dive into the excitement, embrace the luxury, and let your island fantasy come to life! So, what are you waiting for? Click, book, and let the adventure begin! Tanity has never been this good!</p>
+            </div>
 
-        <form action="booking.php" method="post">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-            </div>
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="999-999-9999" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-            </div>
-            <hr>
-            <div>
-                <label for="adult">Adults</label>
-                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-            </div>
-            <div>
-                <label for="child">Children</label>
-                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-            </div>
-            <div>
-                <label for="checkin-date">Check-in Date</label>
-                <input type="date" id="checkin-date" name="checkin" required>
-            </div>
-            <div>
-                <label for="checkout-date">Check-out Date</label>
-                <input type="date" id="checkout-date" name="checkout" required>
-            </div>
-            <div>
-                <label for="room-selection">Select Hotel Preference</label>
-                <select id="hotel-selection" name="hotel_preference" required>
-                    <option value="">Choose a Hotel from the List</option>
-                    <option value="connecting">Connecting</option>
-                    <option value="adjoining">Adjoining</option>
-                    <option value="adjacent">Adjacent</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <label for="message">Additional Concerns?</label>
-                <textarea id="message" name="visitor_message" placeholder="Tell us anything else that you might have doubts about." required></textarea>
-            </div>
-            <button type="submit">Book Flights and Hotel</button>
-        </form>
+            <form action="booking.php" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="999-999-9999" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div>
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div>
+                    <label for="child">Children</label>
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div>
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div>
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div>
+                    <label for="room-selection">Select Hotel Preference</label>
+                    <select id="hotel-selection" name="hotel_preference" required>
+                        <option value="">Choose a Hotel from the List</option>
+                        <option value="Luxevista">Luxevista Resort & Spa</option>
+                        <option value="HarborHaven">HarborHaven Hotel</option>
+                        <option value="SakuraGrove">Sakura Grove Lodging</option>
+                        <option value="CozyNook">CozyNook Bungalows</option>
+                        <option value="CottageCrest">Cottage Crest Homestay</option>
+                        <option value="WhisperingPines">Whispering Pines Bed & Breakfast</option>
+
+                    </select>
+                </div>
+                <hr>
+                <div>
+                    <label for="message">Additional Concerns?</label>
+                    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that you might have doubts about." required></textarea>
+                </div>
+                <button type="submit">Book Flights and Hotel</button>
+            </form>
+        </div>
     </main>
 
     <footer>
